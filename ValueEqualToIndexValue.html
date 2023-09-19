@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value equal to index value</title>
+</head>
+<body>
+    <script>
+        function valueEqualToIndex(arr,n){
+            //code here
+            let oneArray = function(arr)
+            {
+                arr.splice(0,0,null);
+                return arr
+            }
+            let myArray= oneArray(arr)
+            const ValueEqualToindexValue = myArray.filter((ele,index)=>ele === index)
+            return (ValueEqualToindexValue);
+        }
+        console.log(valueEqualToIndex([1,6,3,4,1]))
+    </script>
+</body>
+</html>
